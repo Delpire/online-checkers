@@ -10,6 +10,6 @@ Supports
 
 Future
 -------
-1) Add support for kinged pieces.
-2) Socket.io to allow for online play.
-3) CSS/HTML UI around the game.
+1) Add support for kinged pieces. <br>
+2) Socket.io to allow for online play. <br>
+3) CSS/HTML UI around the game. <br>
