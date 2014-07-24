@@ -3,40 +3,66 @@
 <head>
 
 <title id="title">Checkers</title>
+
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="checkers.css">
-<script src="script.js"></script>
+
 </head>
+
+<!--
+h1 h2 h3 h4 h5 h6 h7 h8
+g1 g2 g3 g4 g5 g6 g7 g8
+f1 f2 f3 f4 f5 f6 f7 f8
+e1 e2 e3 e4 e5 e6 e7 e8
+d1 d2 d3 d4 d5 d6 d7 d8
+c1 c2 c3 c4 c5 c6 c7 c8
+b1 b2 b3 b4 b5 b6 b7 b8
+a1 a2 a3 a4 a5 a6 a7 a8
+-->
 
 <body id="body">
 
-<div id='topBar' class='largest'>Checkers</div>
+<div id='board'>
 
-<div id='board' class='left'>
-	<div id='row8' class='row'>
-		<div id='A8' class='nonspace'>A8</div><div id='B8' class='space'>B8</div><div id='C8' class='nonspace'>C8</div><div id='D8' class='space'>D8</div><div id='E8' class='nonspace'>E8</div><div id='F8' class='space'>F8</div><div id='G8' class='nonspace'>G8</div><div id='H8' class='space'>H8</div>
-	</div>
-	<div id='row7' class='row'>
-		<div id='A7' class='space'>A7</div><div id='B7' class='nonspace'>B7</div><div id='C7' class='space'>C7</div><div id='D7' class='nonspace'>D7</div><div id='E7' class='space'>E7</div><div id='F7' class='nonspace'>F7</div><div id='G7' class='space'>G7</div><div id='H7' class='nonspace'>H7</div>
-	</div>
-	<div id='row6' class='row'>
-		<div id='A6' class='nonspace'>A6</div><div id='B6' class='space'>B6</div><div id='C6' class='nonspace'>C6</div><div id='D6' class='space'>D6</div><div id='E6' class='nonspace'>E6</div><div id='F6' class='space'>F6</div><div id='G6' class='nonspace'>G6</div><div id='H6' class='space'>H6</div>
-	</div>
-	<div id='row5' class='row'>
-		<div id='A5' class='space'>A5</div><div id='B5' class='nonspace'>B5</div><div id='C5' class='space'>C5</div><div id='D5' class='nonspace'>D5</div><div id='E5' class='space'>E5</div><div id='F5' class='nonspace'>F5</div><div id='G5' class='space'>G5</div><div id='H5' class='nonspace'>H5</div>
-	</div>
-	<div id='row4' class='row'>
-		<div id='A4' class='nonspace'>A4</div><div id='B4' class='space'>B4</div><div id='C4' class='nonspace'>C4</div><div id='D4' class='space'>D4</div><div id='E4' class='nonspace'>E4</div><div id='F4' class='space'>F4</div><div id='G4' class='nonspace'>G4</div><div id='H4' class='space'>H4</div>
-	</div>
-	<div id='row3' class='row'>
-		<div id='A3' class='space'>A3</div><div id='B3' class='nonspace'>B3</div><div id='C3' class='space'>C3</div><div id='D3' class='nonspace'>D3</div><div id='E3' class='space'>E3</div><div id='F3' class='nonspace'>F3</div><div id='G3' class='space'>G3</div><div id='H3' class='nonspace'>H3</div>
-	</div>
-	<div id='row2' class='row'>
-		<div id='A2' class='nonspace'>A2</div><div id='B2' class='space'>B2</div><div id='C2' class='nonspace'>C2</div><div id='D2' class='space'>D2</div><div id='E2' class='nonspace'>E2</div><div id='F2' class='space'>F2</div><div id='G2' class='nonspace'>G2</div><div id='H2' class='space'>H2</div>
-	</div>
-	<div id='row1' class='row'>
-		<div id='A1' class='space'>A1</div><div id='B1' class='nonspace'>B1</div><div id='C1' class='space'>C1</div><div id='D1' class='nonspace'>D1</div><div id='E1' class='space'>E1</div><div id='F1' class='nonspace'>F1</div><div id='G1' class='space'>G1</div><div id='H1' class='nonspace'>H1</div>
-	</div>
+<div class='space a 1' id='a1'><div class='piece p1'></div></div>
+<div class='space a 3' id='a3'><div class='piece p1'></div></div>
+<div class='space a 5' id='a5'><div class='piece p1'></div></div>
+<div class='space a 7' id='a7'><div class='piece p1'></div></div>
+
+<div class='space b 2' id='b2'><div class='piece p1'></div></div>
+<div class='space b 4' id='b4'><div class='piece p1'></div></div>
+<div class='space b 6' id='b6'><div class='piece p1'></div></div>
+<div class='space b 8' id='b8'><div class='piece p1'></div></div>
+
+<div class='space c 1' id='c1'><div class='piece p1'></div></div>
+<div class='space c 3' id='c3'><div class='piece p1'></div></div>
+<div class='space c 5' id='c5'><div class='piece p1'></div></div>
+<div class='space c 7' id='c7'><div class='piece p1'></div></div>
+
+<div class='space d 2' id='d2'></div>
+<div class='space d 4' id='d4'></div>
+<div class='space d 6' id='d6'></div>
+<div class='space d 8' id='d8'></div>
+
+<div class='space e 1' id='e1'></div>
+<div class='space e 3' id='e3'></div>
+<div class='space e 5' id='e5'></div>
+<div class='space e 7' id='e7'></div>
+
+<div class='space f 2' id='f2'><div class='piece p2'></div></div>
+<div class='space f 4' id='f4'><div class='piece p2'></div></div>
+<div class='space f 6' id='f6'><div class='piece p2'></div></div>
+<div class='space f 8' id='f8'><div class='piece p2'></div></div>
+
+<div class='space g 1' id='g1'><div class='piece p2'></div></div>
+<div class='space g 3' id='g3'><div class='piece p2'></div></div>
+<div class='space g 5' id='g5'><div class='piece p2'></div></div>
+<div class='space g 7' id='g7'><div class='piece p2'></div></div>
+
+<div class='space h 2' id='h2'><div class='piece p2'></div></div>
+<div class='space h 4' id='h4'><div class='piece p2'></div></div>
+<div class='space h 6' id='h6'><div class='piece p2'></div></div>
+<div class='space h 8' id='h8'><div class='piece p2'></div></div>
+
 </div>
 
 </body>
