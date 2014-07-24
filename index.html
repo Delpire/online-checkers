@@ -5,6 +5,11 @@
 	<body onload="main()">
 		<div id="checkerBoardDiv">
 		</div>
+		<input id="curXInput" size="5" placeholder="curX"></input>
+		<input id="curYInput" size="5" placeholder="curY"></input>
+		<input id="nextXInput" size="5" placeholder="nextX"></input>
+		<input id="nextYInput" size="5" placeholder="nextY"></input>
+		<button onclick="tryMove()">Make Move</button>
 		
 		<script src="./client.js"></script>
 		<script src="./engine.js"></script>
@@ -23,22 +28,19 @@
 				checkerBoardDiv = document.getElementById("checkerBoardDiv");
 			
 				printBoard();
-				checkMove(2, 3, 3, 2); 	
-				checkerBoardDiv.innerHTML = checkerBoardDiv.innerHTML + "<br>";
-				printBoard();
-				checkMove(5, 4, 4, 3);
-				checkerBoardDiv.innerHTML = checkerBoardDiv.innerHTML + "<br>";
-				printBoard();
-				checkMove(3, 2, 5, 4);
-				checkerBoardDiv.innerHTML = checkerBoardDiv.innerHTML + "<br>";
-				printBoard();
-				checkMove(6, 3, 4, 5);
-				checkerBoardDiv.innerHTML = checkerBoardDiv.innerHTML + "<br>";
-				printBoard();
 			
 			}
 			
+			function tryMove(){
 			
+				var curXInput = document.getElementById("curXInput");
+				var curYInput = document.getElementById("curYInput");
+				var nextXInput = document.getElementById("nextXInput");
+				var nextYInput = document.getElementById("nextYInput");
+			
+				checkMove(curXInput.value, curYInput.value, nextXInput.value, nextYInput.value);
+				printBoard();
+			}
 		
 		</script>
 	
