@@ -1,0 +1,36 @@
+/*
+8 x 8 board, light square in bottom right
+*/
+#board {
+	height:calc(100% - 100px);
+	width:calc(100% - 20px);
+	padding:0;
+	border:10px solid #006;
+	background-color:#eee;
+}
+.row {
+	height:calc(100% / 8);
+}
+.blackSpace {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	border:0;
+	background-color:#111;
+	height:100%;
+	line-height:100%;
+	width:calc(100% / 8);
+	text-align:center;
+}
+.whiteSpace {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	border:0;
+	color:#111;
+	background-color:#eee;
+	height:100%;
+	line-height:100%;
+	width:calc(100% / 8);
+	text-align:center;
+}

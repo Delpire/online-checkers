@@ -1,0 +1,24 @@
+html,body {
+	font-size:100%;
+	font-family:sans;
+	height:100%;
+	margin:0;
+	color:#eee;
+	overflow:hidden;
+}
+#topBar {
+	background-color:#006;
+	line-height:80px;
+	height:80px;
+	padding:0 25px;
+}
+
+.left {float:left;}
+.right {float:right;}
+.center {text-align:center;}
+.small {font-size:85%;}
+.smaller {font-size:70%;}
+.smallest {font-size:55%;}
+.large {font-size:115%;}
+.larger {font-size:130%;}
+.largest {font-size:145%;}
