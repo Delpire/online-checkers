@@ -11,9 +11,12 @@
 		<input id="nextYInput" size="5" placeholder="nextY"></input>
 		<button onclick="tryMove()">Make Move</button>
 		
-		<script src="./client.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
 		<script src="./engine.js"></script>
 		<script>
+		
+			socket = io();
+		
 			var board = [ [0, 1, 0, 1, 0, 1, 0, 1],
 			  [1, 0, 1, 0, 1, 0, 1, 0],
 			  [0, 1, 0, 1, 0, 1, 0, 1],
@@ -39,10 +42,13 @@
 				var nextYInput = document.getElementById("nextYInput");
 			
 				checkMove(curXInput.value, curYInput.value, nextXInput.value, nextYInput.value);
-				printBoard();
+				socket.emit('your move', board);
+				
 			}
 		
 		</script>
+		
+		<script src="./client.js"></script>
 	
 	</body>
 	

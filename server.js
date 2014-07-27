@@ -7,7 +7,7 @@ app.get('/', function(req, res){
   res.sendfile('index.html');
 });
 
-app.use(express.static(__dirname + '/assets'));
+app.use(express.static(__dirname));
 
 var waiting = [];
 var num = 0;
@@ -37,7 +37,6 @@ io.on('connection', function(socket){
 		var otherPlayer = waiting.shift();
 		opponentId = otherPlayer.Id;
 		otherPlayer.emit("handshake", socket.id);
-		
 	}
 		
 	//Waiting client needs to receive opponent id.
@@ -49,7 +48,7 @@ io.on('connection', function(socket){
 	socket.on('make move', function(board){
 		socket.broadcast.to(opponentId).emit('your move', board);
 	});
-}
+});
 
 http.listen(3001, function(){
   console.log('listening on *:3001');
