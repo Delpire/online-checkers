@@ -42,7 +42,8 @@
 				var nextYInput = document.getElementById("nextYInput");
 			
 				checkMove(curXInput.value, curYInput.value, nextXInput.value, nextYInput.value);
-				socket.emit('your move', board);
+				printBoard();
+				socket.emit('make move', board);
 				
 			}
 		
