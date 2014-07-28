@@ -1,0 +1,9 @@
+{
+  "name": "Checkers",
+  "version": "0.0.2",
+  "description": "Online Checkers",
+  "dependencies": {
+    "express": "^4.7.0",
+    "socket.io": "^1.0.2"
+  }
+}
