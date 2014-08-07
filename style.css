@@ -2,6 +2,9 @@ html,body {
 	background-color:#777;
 	margin:0;
 }
+html,body,div {
+	cursor:default;
+}
 /*
 h1 h2 h3 h4 h5 h6 h7 h8
 g1 g2 g3 g4 g5 g6 g7 g8
@@ -31,72 +34,43 @@ a1 a2 a3 a4 a5 a6 a7 a8
 	z-index:100;
 	background-color:#333;
 }
-.h {
-	top:calc(50px * 0);
+/* availableMove is for spaces that are available moves during drag/drop */
+.availableMove {
+	box-shadow: 0 0 45px 5px black;
 }
-.g {
-	top:calc(50px * 1);
-}
-.f {
-	top:calc(50px * 2);
-}
-.e {
-	top:calc(50px * 3);
-}
-.d {
-	top:calc(50px * 4);
-}
-.c {
-	top:calc(50px * 5);
-}
-.b {
-	top:calc(50px * 6);
-}
-.a {
-	top:calc(50px * 7);
-}
-
-.\31 {
-	left:calc(50px * 0);
-}
-.\32 {
-	left:calc(50px * 1);
-}
-.\33 {
-	left:calc(50px * 2);
-}
-.\34 {
-	left:calc(50px * 3);
-}
-.\35 {
-	left:calc(50px * 4);
-}
-.\36 {
-	left:calc(50px * 5);
-}
-.\37 {
-	left:calc(50px * 6);
-}
-.\38 {
-	left:calc(50px * 7);
-}
-
+/*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
 .piece {
-	margin:5px;
+	margin:7px;
 	width:30px;
 	height:30px;
 	border-radius:50%;
-	border-width:5px;
+	border-width:3px;
 	border-style:solid;
+	cursor:pointer;
 }
 .p1 {
 	background-color:#800000;
-	border-color:blue;
+	border-color:pink;
 }
 .p2 {
 	background-color:#17140D;
-	border-color:orange;
+	border-color:gray;
 }
-/*
-box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;
-*/
+
+.h { top:calc(50px * 0); }
+.g { top:calc(50px * 1); }
+.f { top:calc(50px * 2); }
+.e { top:calc(50px * 3); }
+.d { top:calc(50px * 4); }
+.c { top:calc(50px * 5); }
+.b { top:calc(50px * 6); }
+.a { top:calc(50px * 7); }
+
+.\31 { left:calc(50px * 0); }
+.\32 { left:calc(50px * 1); }
+.\33 { left:calc(50px * 2); }
+.\34 { left:calc(50px * 3); }
+.\35 { left:calc(50px * 4); }
+.\36 { left:calc(50px * 5); }
+.\37 { left:calc(50px * 6); }
+.\38 { left:calc(50px * 7); }
