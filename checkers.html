@@ -5,6 +5,7 @@
 <title id="title">Checkers</title>
 
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="dragdrop.js"></script>
 
 </head>
 
@@ -43,15 +44,15 @@ a1 a2 a3 a4 a5 a6 a7 a8
 <div class='space d 6' id='d6'></div>
 <div class='space d 8' id='d8'></div>
 
-<div class='space e 1' id='e1'></div>
-<div class='space e 3 availableMove' id='e3'></div>
-<div class='space e 5 availableMove' id='e5'></div>
-<div class='space e 7' id='e7'></div>
+<div class='space e 1 availableMove' ondrop="drop(event)" ondragover="allowDrop(event)" id='e1'></div>
+<div class='space e 3 availableMove' ondrop="drop(event)" ondragover="allowDrop(event)" id='e3'></div>
+<div class='space e 5 availableMove' ondrop="drop(event)" ondragover="allowDrop(event)" id='e5'></div>
+<div class='space e 7 availableMove' ondrop="drop(event)" ondragover="allowDrop(event)" id='e7'></div>
 
-<div class='space f 2' id='f2'><div class='piece p2'></div></div>
-<div class='space f 4' id='f4'><div class='piece p2'></div></div>
-<div class='space f 6' id='f6'><div class='piece p2'></div></div>
-<div class='space f 8' id='f8'><div class='piece p2'></div></div>
+<div class='space f 2' id='f2'><div class='piece p2' draggable="true" ondragstart="drag(event)"></div></div>
+<div class='space f 4' id='f4'><div class='piece p2' draggable="true" ondragstart="drag(event)"></div></div>
+<div class='space f 6' id='f6'><div class='piece p2' draggable="true" ondragstart="drag(event)"></div></div>
+<div class='space f 8' id='f8'><div class='piece p2' draggable="true" ondragstart="drag(event)"></div></div>
 
 <div class='space g 1' id='g1'><div class='piece p2'></div></div>
 <div class='space g 3' id='g3'><div class='piece p2'></div></div>
